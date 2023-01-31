@@ -4,12 +4,18 @@
 
 #include "Yoshi.h"
 
-Yoshi::Yoshi(): Character() {}
+Yoshi::Yoshi() : Character(), number_of_crests_(5){}
 
-Yoshi::Yoshi(float speed, float max_speed) : Character(speed, max_speed) {}
+Yoshi::Yoshi(int number_of_crests):
+        Character(),
+        number_of_crests_(number_of_crests) {}
+
+Yoshi::Yoshi(float speed, float max_speed, int number_of_crests) :
+        Character(speed, max_speed),
+        number_of_crests_(number_of_crests) {}
 
 std::string Yoshi::WhatAmI() const {
-    return "Yoshi";
+    return (std::to_string(number_of_crests_) + " crested Yoshi");
 }
 
 void Yoshi::Accelerate() {

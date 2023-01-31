@@ -10,10 +10,13 @@
 class Yoshi: public Character {
 public:
     Yoshi();
-    Yoshi(float speed, float max_speed);
+    Yoshi(int number_of_crests);
+    Yoshi(float speed, float max_speed, int number_of_crests);
     ~Yoshi() = default;
     void Accelerate() override;
     std::string WhatAmI() const override;
+private:
+    int number_of_crests_;
 };
 
 
