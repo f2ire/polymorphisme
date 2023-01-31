@@ -32,7 +32,7 @@ void test_accelerate() {
         std::cout << ((c[0]->speed() == std::min((i+1)*2,10)) ? "True" : "False") << std::endl;
         std::cout << ((c[1]->speed() == std::min((i+1)+adv,10)) ? "True" : "False") << std::endl;
     } //We see that yoshi is faster than mario because he is starting at 0 and mario at 5
-} //TODO: Check if we need to delete
+}
 
 void test_break() {
     auto y = Yoshi(1,10,5);
