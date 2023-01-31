@@ -9,14 +9,14 @@
 
 class Yoshi: public Character {
 public:
-    Yoshi();
+    Yoshi(); // default constructor not asked but made to make tests easier
     Yoshi(int number_of_crests);
     Yoshi(float speed, float max_speed, int number_of_crests);
-    ~Yoshi() = default;
+    ~Yoshi();
     void Accelerate() override;
     std::string WhatAmI() const override;
 private:
-    int number_of_crests_;
+    int* number_of_crests_;
 };
 
 
