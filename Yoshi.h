@@ -9,12 +9,12 @@
 
 class Yoshi: public Character {
 public:
-    Yoshi(); // default constructor not asked but made to make tests easier
+    Yoshi(); // default constructor not asked but made to make tests easier.
     Yoshi(int number_of_crests);
     Yoshi(float speed, float max_speed, int number_of_crests);
     ~Yoshi();
-    void Accelerate() override;
-    std::string WhatAmI() const override;
+    void Accelerate() final; //final keyword to prevent overriding (no child class of Yoshi).
+    std::string WhatAmI() const final; //But it can also be "override".
 private:
     int* number_of_crests_;
 };

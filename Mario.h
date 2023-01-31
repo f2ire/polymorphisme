@@ -13,7 +13,7 @@ public:
     Mario(float speed, float max_speed);
     ~Mario() = default;
 
-    std::string WhatAmI() const override;
+    std::string WhatAmI() const final; //Same explanation that in Yoshi.h. Could be "override" too.
 };
 
 
