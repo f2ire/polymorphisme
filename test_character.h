@@ -6,6 +6,8 @@
 #define POLYMORPHISM_TEST_CHARACTER_H
 
 #include "Character.h"
+#include "Yoshi.h"
+#include "Mario.h"
 #include <iostream>
 
 void test_default_constructor();
@@ -13,5 +15,5 @@ void test_constructor();
 
 void test_accelerate();
 void test_break();
-void test_speed();
+void test_whatAmI();
 #endif //POLYMORPHISM_TEST_CHARACTER_H

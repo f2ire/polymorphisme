@@ -18,8 +18,8 @@ int main() {
     std::cout << "Test of break : " << std::endl;
     test_break();
     std::cout << "____________________" << std::endl;
-    std::cout << "Test of speed (getter) : " << std::endl;
-    test_speed();
+    std::cout << "Test of WhatAmI: " << std::endl;
+    test_whatAmI();
     std::cout << "____________________" << std::endl;
     return 0;
 }

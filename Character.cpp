@@ -3,7 +3,6 @@
 //
 
 #include "Character.h"
-#include <string>
 
 Character::Character() : speed_(0), max_speed_(10) {}
 
