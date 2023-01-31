@@ -23,14 +23,14 @@ void test_constructor() {
 
 void test_accelerate() {
     auto y = Yoshi();
-    auto adv = 5; //Start to 5 for both reach the max speed
+    auto adv = 5.0; //Start to 5 for both reach the max speed
     auto m = Mario(adv,10); //We give advance to mario to make easier the test and more interesting
     Character* c[2] = {&y, &m};
     for (int i = 0; i < 6; ++i) {
         c[0]->Accelerate();
         c[1]->Accelerate();
-        std::cout << ((c[0]->speed() == std::min((i+1)*2,10)) ? "True" : "False") << std::endl;
-        std::cout << ((c[1]->speed() == std::min((i+1)+adv,10)) ? "True" : "False") << std::endl;
+        std::cout << ((c[0]->speed() == std::min((i+1)*2.0,10.0)) ? "True" : "False") << std::endl;
+        std::cout << ((c[1]->speed() == std::min((i+1)+adv,10.0)) ? "True" : "False") << std::endl;
     } //We see that yoshi is faster than mario because he is starting at 0 and mario at 5
 }
 

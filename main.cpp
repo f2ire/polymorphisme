@@ -2,7 +2,7 @@
 #include "test_character.h"
 
 //The question 2): Compile return an error because we can not create an object of type Character
-//                  because it's an abstrat class because we made WhatAmI() pure virtual with "= 0"
+//                  because it's an abstract class because we made WhatAmI() pure virtual with "= 0"
 //The race asked in step 5), is done in the test_accelerate.
 //No leaks of memory checked on Valgrind  "All heap blocks were freed -- no leaks are possible"
 
