@@ -6,7 +6,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <numeric>
 
 void test_default_constructor() { //Its also test speed()
     auto y = Yoshi();

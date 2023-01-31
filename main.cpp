@@ -7,6 +7,7 @@
 //                  because it's an abstract class because we made WhatAmI() pure virtual with "= 0"
 //                  We need to make a class that inherit from Character and implement WhatAmI() to make it work
 //No leaks of memory checked on Valgrind  "All heap blocks were freed -- no leaks are possible"
+// 10 allocs and 100 frees --> OK!
 
 int main() {
     std::cout << std::endl << "All test for the Character class" << std::endl;
