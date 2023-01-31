@@ -12,7 +12,7 @@ public:
     Yoshi();
     Yoshi(float speed, float max_speed);
     ~Yoshi() = default;
-
+    void Accelerate() override;
     std::string WhatAmI() const override;
 };
 

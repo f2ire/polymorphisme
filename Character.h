@@ -14,7 +14,7 @@ public:
     ~Character() = default;
     virtual std::string WhatAmI() const = 0; // Pure virtual function. This class is now abstract. We can't instantiate it anymore.
 
-    void Accelerate();
+    virtual void Accelerate();
     void Break();
     inline float speed() const { return speed_; }
 private:

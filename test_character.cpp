@@ -22,7 +22,7 @@ void test_constructor() {
 }
 
 void test_accelerate() {
-    Yoshi y = Yoshi(9,10);
+    Yoshi y = Yoshi(8,10);
     Mario m = Mario(9,10);
     y.Accelerate();
     m.Accelerate();
